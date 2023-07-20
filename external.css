@@ -1,164 +1,223 @@
-*{
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+
+/* Set the font family for the entire body */
+body {
     font-family: 'Work Sans', sans-serif;
 }
-header{
-    padding: 45px 240px 45px 240px;
-    background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+
+/* Styling for the header section */
+header {
+    padding: 45px 240px 45px 240px; /* Add padding to the header */
+    background: #FFF; /* Set the background color of the header */
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05); /* Add box-shadow to the header */
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-}
-nav .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.title{
-    color: #0B0223;
-    font-size: 45px;
-    font-weight: 700;
-}
-.title-color{
-    color: #FF42A5;
-}
-.menus{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.menus li{
-    list-style: none;
-    margin-left: 32px;
-    color: #3C354F;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-}
-.li-icon{
-    text-align: center;
-    padding: 16px;
-    border-radius: 8px;
-    background: rgba(11, 2, 35, 0.10);
-}
-.li-icon i{
-    font-size: 24px;
+/* Styling for the navigation bar */
+nav {
+    display: flex; /* Use flex layout for the navigation */
+    justify-content: space-between; /* Space elements evenly within the navigation bar */
 }
 
-.banner-section{
-    padding: 0px 240px;
-}
-.banner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.first-title{
-    color: #0B0223;
-    font-size: 48px;
-    text-transform: uppercase;
-}
-.main-title{
-    font-size: 95px;
-    font-weight: 800;
-    margin-bottom: 24px;
-}
-.lg{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.banner-description{
-    margin-bottom: 16px;
-    color: #534C64;
-    font-size: 20px;
-    font-weight: 500;
-}
-.btn{
-    padding: 21px 40px;
-    border-radius: 48px;
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border: none;
-    margin-top: 41px;
-}
-.btn-1{
-    background: #FF42A5;
-}
-.btn-2{
-    background: #4EC5F7;
+/* Styling for the logo section in the navigation bar */
+nav .logo {
+    display: flex; /* Use flex layout for the logo section */
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
 }
 
-main{
-    padding: 120px 240px;
+/* Styling for the title text in the logo section */
+.title {
+    color: #0B0223; /* Set the color of the title text */
+    font-size: 45px; /* Set the font size of the title text */
+    font-weight: 700; /* Set the font weight of the title text */
 }
-.og-text{
-    text-align: center;
-    margin-bottom: 48px;
+
+/* Styling for the colored part of the title text */
+.title-color {
+    color: #FF42A5; /* Set the color of the colored part of the title text */
 }
-.og-title{
-    color: #0B0223;
-    font-size: 48px;
-    font-weight: 900;
-    padding: 10px;
+
+/* Styling for the menu items in the navigation bar */
+.menus {
+    display: flex; /* Use flex layout for the menu items */
+    justify-content: flex-end; /* Align menu items to the right */
+    align-items: center; /* Center the menu items vertically */
 }
-.og-description{
-    color: #534C64;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
+
+/* Styling for individual menu items in the navigation bar */
+.menus li {
+    list-style: none; /* Remove the default list-style */
+    margin-left: 32px; /* Add left margin between menu items */
+    color: #3C354F; /* Set the color of the menu items */
+    text-align: center; /* Center the text in the menu items */
+    font-size: 18px; /* Set the font size of the menu items */
+    font-weight: 500; /* Set the font weight of the menu items */
 }
-.og-img{
-    display: flex;
-    gap: 18px;
+
+/* Styling for the menu item with icons */
+.li-icon {
+    text-align: center; /* Center the text in the menu item with icons */
+    padding: 16px; /* Add padding around the menu item with icons */
+    border-radius: 8px; /* Add border-radius to make the menu item rounded */
+    background: rgba(11, 2, 35, 0.10); /* Set the background color of the menu item with icons */
 }
-.card{
-    position: relative;
-    width: 100%;
+
+/* Styling for icons inside the menu item with icons */
+.li-icon i {
+    font-size: 24px; /* Set the font size of the icons */
 }
-.og-container{
-    margin-bottom: 24px;
-    position: relative;
-    width: 100%;
+
+/* Styling for the banner section */
+.banner-section {
+    padding: 0px 240px; /* Add padding to the banner section */
 }
-.og-img .card-img{
-    opacity: 1;
-    width: 100%;
-    border-radius: 16px;
+
+/* Styling for the banner content */
+.banner {
+    display: flex; /* Use flex layout for the banner content */
+    justify-content: space-between; /* Space elements evenly within the banner */
+    align-items: center; /* Center elements vertically in the banner */
 }
+
+/* Styling for the first title in the banner */
+.first-title {
+    color: #0B0223; /* Set the color of the first title */
+    font-size: 48px; /* Set the font size of the first title */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+/* Styling for the main title in the banner */
+.main-title {
+    font-size: 95px; /* Set the font size of the main title */
+    font-weight: 800; /* Set the font weight of the main title */
+    margin-bottom: 24px; /* Add bottom margin to the main title */
+}
+
+/* Styling for elements with the class .lg */
+.lg {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%); /* Add linear gradient to the element */
+    background-clip: text; /* Clip the background to the text */
+    -webkit-background-clip: text; /* For Safari */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the background */
+}
+
+/* Styling for the banner descriptions */
+.banner-description {
+    margin-bottom: 16px; /* Add bottom margin to the banner descriptions */
+    color: #534C64; /* Set the color of the banner descriptions */
+    font-size: 20px; /* Set the font size of the banner descriptions */
+    font-weight: 500; /* Set the font weight of the banner descriptions */
+}
+
+/* Styling for buttons with the class .btn */
+.btn {
+    padding: 21px 40px; /* Add padding to the buttons */
+    border-radius: 48px; /* Add border-radius to make the buttons rounded */
+    color: #FFF; /* Set the text color of the buttons to white */
+    font-size: 20px; /* Set the font size of the buttons */
+    font-weight: 600; /* Set the font weight of the buttons */
+    text-transform: uppercase; /* Convert text to uppercase */
+    border: none; /* Remove the border from the buttons */
+    margin-top: 41px; /* Add top margin to the buttons */
+}
+
+/* Styling for buttons with the class .btn-1 */
+.btn-1 {
+    background: #FF42A5; /* Set the background color of btn-1 */
+}
+
+/* Styling for buttons with the class .btn-2 */
+.btn-2 {
+    background: #4EC5F7; /* Set the background color of btn-2 */
+}
+
+/* Styling for the main content area */
+main {
+    padding: 120px 240px; /* Add padding to the main content area */
+}
+
+/* Styling for the online games text section */
+.og-text {
+    text-align: center; /* Center the text in the online games section */
+    margin-bottom: 48px; /* Add bottom margin to the online games text section */
+}
+
+/* Styling for the online games title in the online games section */
+.og-title {
+    color: #0B0223; /* Set the color of the online games title */
+    font-size: 48px; /* Set the font size of the online games title */
+    font-weight: 900; /* Set the font weight of the online games title */
+    padding: 10px; /* Add padding to the online games title */
+}
+
+/* Styling for the online games description in the online games section */
+.og-description {
+    color: #534C64; /* Set the color of the online games description */
+    font-size: 18px; /* Set the font size of the online games description */
+    font-weight: 400; /* Set the font weight of the online games description */
+    line-height: 30px; /* Set the line height of the online games description */
+}
+
+/* Styling for the online games images container */
+.og-img {
+    display: flex; /* Use flex layout for the online games images */
+    gap: 18px; /* Add spacing between the online games images */
+}
+
+/* Styling for individual cards containing the online games images */
+.card {
+    position: relative; /* Set the position of the cards */
+    width: 100%; /* Set the width of the cards */
+}
+
+/* Styling for the container of online games images */
+.og-container {
+    margin-bottom: 24px; /* Add bottom margin to the online games images container */
+    position: relative; /* Set the position of the container */
+    width: 100%; /* Set the width of the container */
+}
+
+/* Styling for the online games images */
+.og-img .card-img {
+    opacity: 1; /* Set the opacity of the online games images */
+    width: 100%; /* Set the width of the online games images */
+    border-radius: 16px; /* Add border-radius to make the images rounded */
+}
+
+/* Styling for the middle section of the online games images */
 .middle {
-    width:100%; height:100%;
-    opacity: 0;
-    border-radius: 16px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background:rgba(0,0,0,0.6);
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    text-align: center;
-    border: 5px solid #ec2ea0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Set the opacity of the middle section to 0 (hidden) */
+    border-radius: 16px; /* Add border-radius to make the section rounded */
+    position: absolute; /* Set the position of the middle section */
+    top: 50%; /* Position the middle section at the center vertically */
+    left: 50%; /* Position the middle section at the center horizontally */
+    transform: translate(-50%, -50%); /* Center the middle section */
+    -ms-transform: translate(-50%, -50%); /* For Microsoft browsers */
+    background: rgba(0, 0, 0, 0.6); /* Set the background color of the middle section */
+    transition: all 0.5s; /* Add a transition effect for smooth animation */
+    -webkit-transition: all 0.5s; /* For Safari */
+    text-align: center; /* Center the text in the middle section */
+    border: 5px solid #ec2ea0; /* Add a border around the middle section */
 }
+
+/* Styling for the hover effect on the online games images container */
 .og-container:hover .card-img {
-    opacity: .8;
-    border: 5px solid #ec2ea0;
+    opacity: 0.8; /* Reduce the opacity of the images on hover */
+    border: 5px solid #ec2ea0; /* Add a border around the images on hover */
 }
-  
+
+/* Styling for the hover effect on the middle section of online games images */
 .og-container:hover .middle {
-    opacity: 1;
+    opacity: 1; /* Show the middle section on hover */
 }
+
 .text {
     margin-top: 45%;
     color: #FF42A5;
@@ -172,111 +231,459 @@ main{
     font-weight: 500;
     line-height: 30px;
 }
-
-.play-section{
-    margin-top: 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.play-content{
-    text-align: right;
-}
-.play-title{
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 60px;
-}
-.play-description{
-    max-width: 353px;
-    color: #534C64;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-}
-.play-img{
-    position: relative;
-}
-.play-img-badge{
-    position: absolute;
-    bottom: -75px;
-    left: -145px;
+/* Styling for the play section */
+.play-section {
+    margin-top: 120px; /* Add top margin to the play section */
+    display: flex; /* Use flex layout for the play section */
+    justify-content: space-between; /* Space out the elements horizontally */
+    align-items: center; /* Center the elements vertically */
 }
 
-.catagory-container{
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 27px;
-    flex-wrap: wrap;
-}
-.catagory-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    background: #FFF;
-    padding: 10px;
-    border: 1px solid #FFF;
-}
-.catagory-box:hover{
-    border: 1px solid #FF42A5;
-    color: #FF42A5;
+/* Styling for the content in the play section */
+.play-content {
+    text-align: right; /* Align the content to the right */
 }
 
-footer{
-    background: #0A0826;
-    text-align: center;
-    color: #FFF;
+/* Styling for the play title in the play section */
+.play-title {
+    font-size: 48px; /* Set the font size of the play title */
+    font-weight: 700; /* Set the font weight of the play title */
+    line-height: 60px; /* Set the line height of the play title */
 }
-footer .logo{
-    padding-top: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/* Styling for the play description in the play section */
+.play-description {
+    max-width: 353px; /* Set the maximum width of the play description */
+    color: #534C64; /* Set the text color of the play description */
+    font-size: 18px; /* Set the font size of the play description */
+    font-weight: 400; /* Set the font weight of the play description */
+    line-height: 30px; /* Set the line height of the play description */
 }
-.logo-title{
-    color: #FFF;
-    font-size: 45px;
-    font-weight: 700;
+
+/* Styling for the play image container */
+.play-img {
+    position: relative; /* Set the position of the play image container */
 }
-.important-link{
-    color: #FFF;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 65px;
-    margin-bottom: 50px;
+
+/* Styling for the play image badge */
+.play-img-badge {
+    position: absolute; /* Set the position of the play image badge */
+    bottom: -75px; /* Position the badge at the bottom, outside the play image */
+    left: -145px; /* Position the badge to the left, outside the play image */
 }
-.important-link a{
-    text-decoration: none;
-    color: #FFF;
-    margin-left: 60px;
+
+/* Styling for the category container */
+.catagory-container {
+    margin-top: 200px; /* Add top margin to the category container */
+    display: flex; /* Use flex layout for the category container */
+    justify-content: center; /* Center the category items horizontally */
+    align-items: center; /* Center the category items vertically */
+    gap: 27px; /* Add spacing between category items */
+    flex-wrap: wrap; /* Allow category items to wrap to the next line when needed */
 }
-.social{
-    padding-top: 15px;
-    padding-bottom: 60px;
+
+/* Styling for individual category boxes */
+.catagory-box {
+    display: flex; /* Use flex layout for each category box */
+    justify-content: center; /* Center the content of each category box horizontally */
+    align-items: center; /* Center the content of each category box vertically */
+    border-radius: 50px; /* Add border-radius to make the category boxes rounded */
+    background: #FFF; /* Set the background color of the category boxes */
+    padding: 10px; /* Add padding to the category boxes */
+    border: 1px solid #FFF; /* Set the border style for the category boxes */
 }
-.social .fab{
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    margin-right: 20px;
+
+/* Styling for category boxes on hover */
+.catagory-box:hover {
+    border: 1px solid #FF42A5; /* Change the border style on hover */
+    color: #FF42A5; /* Change the text color on hover */
 }
-.term-policy{
-    margin-bottom: 28px;
+
+/* Styling for the footer */
+footer {
+    background: #0A0826; /* Set the background color of the footer */
+    text-align: center; /* Center the content within the footer */
+    color: #FFF; /* Set the text color to white */
 }
-.term-policy small{
-    color: rgba(255, 255, 255, 0.60);
-    font-size: 16px;
-    font-weight: 500;
-    margin-left: 60px;
+
+/* Styling for the logo section in the footer */
+footer .logo {
+    padding-top: 120px; /* Add top padding to the logo section */
+    display: flex; /* Use flex layout for the logo section */
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
 }
-.footer-description{
-    color: rgba(255, 255, 255, 0.60);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    padding-bottom: 130px;
+
+/* Styling for the logo title in the footer */
+.logo-title {
+    color: #FFF; /* Set the text color of the logo title to white */
+    font-size: 45px; /* Set the font size of the logo title */
+    font-weight: 700; /* Set the font weight of the logo title */
+}
+
+/* Styling for the important links section in the footer */
+.important-link {
+    color: #FFF; /* Set the text color of the important links to white */
+    text-align: center; /* Center the important links horizontally */
+    font-size: 18px; /* Set the font size of the important links */
+    font-weight: 600; /* Set the font weight of the important links */
+    margin-top: 65px; /* Add top margin to the important links section */
+    margin-bottom: 50px; /* Add bottom margin to the important links section */
+}
+
+/* Styling for individual links in the important links section */
+.important-link a {
+    text-decoration: none; /* Remove underline from the links */
+    color: #FFF; /* Set the text color of the links to white */
+    margin-left: 60px; /* Add left margin to separate the links */
+}
+
+/* Styling for the social media links section in the footer */
+.social {
+    padding-top: 15px; /* Add top padding to the social media links section */
+    padding-bottom: 60px; /* Add bottom padding to the social media links section */
+}
+
+/* Styling for individual social media icons */
+.social .fab {
+    color: white; /* Set the icon color to white */
+    font-weight: bold; /* Set the font weight of the icons */
+    font-size: 30px; /* Set the font size of the icons */
+    margin-right: 20px; /* Add right margin to separate the icons */
+}
+
+/* Styling for the term and policy links section in the footer */
+.term-policy {
+    margin-bottom: 28px; /* Add bottom margin to the term and policy links section */
+}
+
+/* Styling for small text in the term and policy links */
+.term-policy small {
+    color: rgba(255, 255, 255, 0.60); /* Set the text color to a semi-transparent white */
+    font-size: 16px; /* Set the font size of the small text */
+    font-weight: 500; /* Set the font weight of the small text */
+    margin-left: 60px; /* Add left margin to separate the small text */
+}
+
+/* Styling for the footer description */
+.footer-description {
+    color: rgba(255, 255, 255, 0.60); /* Set the text color to a semi-transparent white */
+    font-size: 16px; /* Set the font size of the footer description */
+    font-weight: 700; /* Set the font weight of the footer description */
+    line-height: 24px; /* Set the line height for the footer description */
+    padding-bottom: 130px; /* Add bottom padding to the footer description section */
+}
+
+
+
+
+
+/* CSS for screen sizes up to 576px (Mobile devices) */
+
+@media screen and (max-width: 576px) {
+    /* Header Styling */
+    header {
+        padding: 45px 20px 45px 20px; /* Adjust header padding for smaller screens */
+    }
+
+    nav {
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 50px; /* Add some spacing between navigation items */
+    }
+
+    .menus {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 36px; /* Add some spacing between menu items */
+    }
+
+    .menus .li-icon {
+        margin-top: 40px; /* Add top margin to the last menu item with icons */
+    }
+
+    /* Banner Section Styling */
+    .banner-section {
+        padding: 0px 20px; /* Adjust banner section padding for smaller screens */
+        width: 100%; /* Ensure the banner section takes up the full width */
+    }
+
+    .banner {
+        flex-direction: column-reverse; /* Stack the banner content below the banner image */
+        justify-content: center; /* Center the banner content vertically */
+        align-items: center; /* Center the banner content horizontally */
+        gap: 70px; /* Add some spacing between banner elements */
+    }
+
+    .first-title {
+        font-size: 40px; /* Adjust font size of the first title in the banner */
+        text-align: center; /* Center the first title */
+    }
+
+    .main-title {
+        font-size: 80px; /* Adjust font size of the main title in the banner */
+        text-align: center; /* Center the main title */
+    }
+
+    .banner-description {
+        font-size: 16px; /* Adjust font size of the banner descriptions */
+        font-weight: 500; /* Set font weight for banner descriptions */
+        margin-left: 20px; /* Add left margin to the descriptions */
+    }
+
+    .btn {
+        padding: 15px 30px; /* Adjust button padding for smaller screens */
+        font-size: 18px; /* Adjust font size of buttons */
+        text-align: center; /* Center the button text */
+    }
+
+    .banner img {
+        width: 100%; /* Ensure the banner image takes up the full width */
+        text-align: center; /* Center the banner image horizontally */
+    }
+
+    /* Main Section Styling */
+    main {
+        padding: 50px 20px; /* Adjust main section padding for smaller screens */
+    }
+
+    .og-img {
+        flex-direction: column; /* Stack online game images vertically */
+        gap: 18px; /* Add some spacing between online game images */
+        width: 90%; /* Limit the width of the online game images */
+        justify-content: center; /* Center the images horizontally */
+        margin: 0 auto; /* Center the grid container within its parent */
+    }
+
+    .og-title {
+        font-size: 27px; /* Adjust font size of online game titles */
+        font-weight: 800; /* Set font weight for online game titles */
+        padding: 5px; /* Add padding around online game titles */
+    }
+
+    .og-description {
+        font-size: 13px; /* Adjust font size of online game descriptions */
+    }
+
+    .og-container {
+        margin-bottom: 10px; /* Add bottom margin to online game containers */
+    }
+
+    .og-img .card p {
+        font-size: 12px; /* Adjust font size of online game card descriptions */
+        line-height: 24px; /* Set line height for card descriptions */
+        text-align: center; /* Center the card descriptions */
+    }
+
+    /* Play Section Styling */
+    .play-section {
+        margin-top: 50px; /* Add some top margin to the play section */
+        flex-direction: column; /* Stack play section elements vertically */
+        justify-content: center; /* Center play section elements vertically */
+    }
+
+    .play-content {
+        text-align: center; /* Center the play section content horizontally */
+    }
+
+    .play-title {
+        font-size: 28px; /* Adjust font size of play section titles */
+        line-height: 30px; /* Set line height for play section titles */
+    }
+
+    .play-description {
+        max-width: 100%; /* Limit the width of play section description */
+        font-size: 15px; /* Adjust font size of play section descriptions */
+        line-height: 24px; /* Set line height for play section descriptions */
+        margin-top: 30px; /* Add some top margin */
+        margin-bottom: 30px; /* Add some bottom margin */
+    }
+
+    .play-img {
+        width: 90%; /* Limit the width of the play section images */
+    }
+
+    .play-img img {
+        max-width: 100%; /* Ensure the images take up the available width */
+    }
+
+    .play-img-badge {
+        bottom: -75px; /* Position the play section badge relative to its parent */
+        left: -50px;
+    }
+
+    .play-img-badge img {
+        max-width: 60%; /* Limit the width of the badge image */
+    }
+
+    /* Category Section Styling */
+    .catagory-container {
+        margin-top: 100px; /* Add some top margin to the category container */
+        display: grid; /* Use a grid layout for category boxes */
+        grid-template-columns: repeat(3, 1fr); /* Create three columns */
+        gap: 0px; /* Remove any gap between category boxes */
+        width: 100%; /* Ensure the category container takes up the full width */
+    }
+
+    .catagory-box img {
+        width: 30%; /* Limit the width of category box images */
+    }
+
+    .catagory-box h3 {
+        font-size: 10px; /* Adjust the font size of category box titles */
+    }
+
+                                 /* Footer Styling */
+    footer .logo {
+        padding-top: 100px; /* Adjust top padding for the logo in the footer */
+    }
+
+    .important-link {
+        display: grid; /* Use a grid layout for the important links */
+        grid-template-columns: repeat(3, 1fr); /* Create three columns */
+        row-gap: 25px; /* Add some vertical spacing between links */
+        font-size: 15px; /* Adjust font size of important links */
+        text-align: center; /* Center the links horizontally */
+        justify-content: center; /* Center the links vertically */
+        align-items: center; /* Center the links horizontally */
+        margin-top: 50px; /* Add top margin to the important links */
+    }
+
+    .important-link a {
+        margin-left: 0px; /* Remove left margin from important links */
+    }
+                            /* Styling for social media links */
+.social {
+    display: grid; /* Use grid layout for social media links */
+    grid-template-columns: repeat(3, 90px); /* Create three columns with a width of 90px each */
+    justify-content: center; /* Center the social media links horizontally */
+    row-gap: 25px; /* Add vertical spacing between social media links */
+    padding-top: 20px; /* Add top padding to the social media section */
+    padding-bottom: 50px; /* Add bottom padding to the social media section */
+}
+
+                                /* Styling for terms and policy links */
+.term-policy {
+    display: grid; /* Use grid layout for terms and policy links */
+    grid-template-columns: repeat(2, 1fr); /* Create two columns with equal width */
+    justify-content: center; /* Center the links horizontally */
+    row-gap: 25px; /* Add vertical spacing between the links */
+}
+
+                                                    /* Styling for small text in terms and policy links */
+.term-policy small {
+    font-size: 15px; /* Set font size for small text */
+    margin-left: 0px; /* Remove left margin from small text */
+}
+
+                                            /* Styling for the footer description */
+.footer-description {
+    display: flex; /* Use flex layout for the footer description */
+    flex-direction: column; /* Stack the description text vertically */
+    font-size: 15px; /* Set font size for the footer description */
+    padding-bottom: 100px; /* Add bottom padding to the footer description section */
+}
+}
+
+
+
+@media screen and (min-width: 577px) and (max-width: 960px) {
+    header{
+        padding: 45px 20px 45px 20px;
+    }
+
+    nav{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .menus{
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .banner-section{
+        padding: 0px 20px;
+        width: 100%;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+    }
+    .banner img{
+        width: 100%;
+        text-align: center;
+    }
+
+    main{
+        padding: 50px 20px;
+    }
+    .og-img{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .play-section{
+        margin-top: 80px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .play-content{
+        text-align: center;
+    }
+    .play-description{
+        max-width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .play-img{
+        width: 80%;
+    }
+    .play-img img{
+        max-width: 100%;
+    }
+    .play-img-badge{
+        bottom: -75px;
+        left: -80px;
+    }
+    .play-img-badge img{
+        max-width: 80%;
+    }
+
+    .catagory-container{
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px;
+        width: 100%;
+    }
+    .catagory-box h3{
+        font-size: 14px;
+    }
+   
+    footer .logo{
+        padding-top: 100px;
+    }
+    .important-link{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 25px;
+        margin-top: 50px;
+    }
+    .important-link a{
+        margin-left: 0px;
+    }
+    .term-policy{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        row-gap: 25px;
+    }
+    .footer-description{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
 }
